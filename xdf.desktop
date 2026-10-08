@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=xdf
+Comment=Disk usage graph
+Exec=xdf
+Icon=xdf
+Terminal=false
+Categories=System;Monitor;
+StartupWMClass=Xdf

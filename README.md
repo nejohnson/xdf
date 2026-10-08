@@ -23,3 +23,13 @@ by used blocks plus blocks available to an ordinary user. This means reserved
 filesystem space counts as used. The graph retains one sample per pixel of
 window width and preserves the newest samples when resized. The label rounds
 up to a whole percent, as `df` does.
+
+The window sets its own icon (`_NET_WM_ICON`), a miniature of the graph in the
+same colours, so panels and task switchers show it instead of a generic X
+icon.
+
+GNOME (the default Ubuntu desktop) ignores that window icon and instead looks
+up a desktop entry matching the window's `WM_CLASS`; without one it shows a
+generic gear. Run `make install` to install the binary, `xdf.desktop` and
+`xdf.svg` under `~/.local` (or set `PREFIX`), then restart xdf. If the old
+icon sticks, log out and back in.
